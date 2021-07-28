@@ -1,6 +1,9 @@
 name: Generate demo GIF
 
-on: push
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   generate-gif:
@@ -15,6 +18,7 @@ jobs:
         run: |
           git config --global user.name "YeYingYouYin/website-to-gif"
           git config --global user.email "1778029840@qq.com"
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add .
           git commit -m 'Update GIF'
           git push
