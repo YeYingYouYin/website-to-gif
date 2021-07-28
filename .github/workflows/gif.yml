@@ -7,9 +7,8 @@ jobs:
   generate-gif:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Website to GIF
-        uses: PabloLec/website-to-gif@1.0.3
+        uses: actions/checkout@v2
         with:
           url: "https://tiyu.baidu.com/tokyoly/home/tab/%E5%A5%96%E7%89%8C%E6%A6%9C/from/pc"
       - name: Commit GIF to GH repo
