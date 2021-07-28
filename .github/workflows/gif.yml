@@ -10,7 +10,7 @@ jobs:
       - name: Website to GIF
         uses: PabloLec/website-to-gif@1.0.3
         with:
-          url: "https://docs.github.com/en/get-started"
+          url: "https://tiyu.baidu.com/tokyoly/home/tab/%E5%A5%96%E7%89%8C%E6%A6%9C/from/pc"
       - name: Commit GIF to GH repo
         run: |
           git config --global user.name "PabloLec/website-to-gif"
